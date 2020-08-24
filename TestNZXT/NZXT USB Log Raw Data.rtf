@@ -1,0 +1,169 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier;}}
+{\colortbl ;\red0\green77\blue187;\red192\green192\blue192;\red255\green255\blue0;\red0\green255\blue255;\red255\green0\blue0;\red0\green255\blue0;\red255\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sl276\slmult1\b\f0\fs22\lang9 Set color\b0\par
+\par
+000117: Bulk or Interrupt Transfer (DOWN), 2019-10-02 01:38:53.6802232 +0.9782937 (1. Device: NZXT USB Device)\par
+Pipe Handle: 0x3f73a70 (Endpoint Address: 0x1)\par
+Send 0x40 bytes to the device\par
+ \cf1\highlight2 28 03\highlight0  \cf0\highlight3 01\highlight0  \highlight4 0A\highlight0  02 02 00 \highlight5 01\cf5\highlight0  \cf0\highlight6 01\highlight0  00 00 00 00 00 00 00   (...............\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+\par
+\par
+000129: Bulk or Interrupt Transfer (DOWN), 2019-10-02 01:38:54.7822613 +0.0803640 (1. Device: NZXT USB Device)\par
+Pipe Handle: 0x3f73a70 (Endpoint Address: 0x1)\par
+Send 0x40 bytes to the device\par
+\cf1  \highlight2 28 03\highlight0  \cf0\highlight3 01\highlight0  \highlight4 0A\highlight0  02 02 00 \highlight5 00\highlight0  \highlight6 01\highlight0  00 00 00 00 00 00 00   (...............\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+\par
+\par
+000073: Bulk or Interrupt Transfer (DOWN), 2019-10-02 01:38:45.7895798 +0.0005890 (1. Device: NZXT USB Device)\par
+Pipe Handle: 0x3f73a70 (Endpoint Address: 0x1)\par
+Send 0x40 bytes to the device\par
+\cf1  \highlight2 28 03\highlight0  \cf0\highlight3 02\highlight0  \highlight4 20\highlight0  02 02 00 \highlight5 01\highlight0  \highlight6 01\highlight0  00 00 00 00 00 00 00   (.. ............\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+\par
+\highlight2 Gray\highlight0 :  Function code for setting color\par
+\par
+\highlight3 Yellow\highlight0 : Color channel number.\par
+\par
+\highlight4 Cyan\highlight0 :  This is either 0x0A or 0x20.\par
+       Set to 0x0A when dealing with Channel 1\par
+       Set to 0x20 when dealing with Channel 2\par
+       Not sure if this byte makes any difference. Can check it later.\par
+\par
+\highlight5 Red\highlight0 :   This is the mod byte for a color mode (e.g. set to 0x01\par
+       for "backwards" spectrum-wave, but 0x00 for normal\par
+       spectrum-wave.\par
+\par
+\highlight6 Green\highlight0 : Speed of color mode (from slowest to fastest). Same\par
+       values as Smart Device V1.\par
+\par
+\par
+\b Set fan speed for Fan 2 (0x01 << 2 = 0010)\b0\par
+\par
+000093: Bulk or Interrupt Transfer (DOWN), 2019-10-02 01:38:49.1930898 +0.4911240 (1. Device: NZXT USB Device)\par
+Pipe Handle: 0x3f73a70 (Endpoint Address: 0x1)\par
+Send 0x40 bytes to the device\par
+ \cf1\highlight2 62 01\highlight0  \cf0\highlight3 02\highlight0  \highlight6 00 \cf5 2F\cf0  00\highlight0  00 00 00 00 00 00 00 00 00 00   b.../...........\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+\par
+\b Set fan speed for Fan 1 (0x01 << 1 = 0001)\b0\par
+\par
+000231: Bulk or Interrupt Transfer (DOWN), 2019-10-02 01:39:11.9129538 +0.2122152 (1. Device: NZXT USB Device)\par
+Pipe Handle: 0x3f73a70 (Endpoint Address: 0x1)\par
+Send 0x40 bytes to the device\par
+ \highlight2 62 01\highlight0  \highlight3 01\highlight0  \highlight6 5A 00 00\highlight0  00 00 00 00 00 00 00 00 00 00   b..Z............\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+\par
+\highlight2 Gray\highlight0 : Function code for settig fan speed.\par
+\par
+\highlight3 Yellow\highlight0 : This represents the fan channels. Three fans can\par
+        be set simultaneously by enabling the bit flags:\par
+        0001 <-- Fan 1\par
+        0010 <-- Fan 2\par
+        0100 <-- Fan 3\par
+\par
+        0101 <-- Fans 1 and 3\par
+        0111 <-- All 3 fans\par
+\par
+\highlight6 Green\highlight0 :  Fan duty in percent. XX YY ZZ\par
+        Where XX (first green byte) is duty for Fan 1\par
+              YY (second green byte) is duty for Fan 2\par
+              ZZ (third green byte) is duty for Fan 3\par
+\par
+\par
+\b STATUS Reply 1 of 2\b0\par
+\par
+000265: Bulk or Interrupt Transfer (UP), 2019-10-02 01:39:18.6986605 +0.1100103. (1. Device: NZXT USB Device) Status: 0x00000000\par
+Pipe Handle: 0x3f75a70 (Endpoint Address: 0x81)\par
+Get 0x40 bytes from the device\par
+ \cf1 67 \highlight2 02\highlight0  \cf5 28 00 2E 00 16 57 41 47 35 31 33 20 03 00\cf0    g.(....WAG513 ..\par
+ \cf5 00 02\cf0  00 00 00 00 00 00 00 00 \highlight3 8F 03 00 00 00 00\highlight0    ..........\'8f.....\par
+ 00 00 00 00 00 00 00 00 \highlight6 5A 28 4B \highlight0 00 00 00 00 00   ........Z(K.....\par
+ \highlight6 5A 28 4B \highlight0 00 00 00 00 00 \cf5\highlight4 40\cf0\highlight0  00 00 00 00 00 00 00   Z(K.....@.......\par
+\par
+\highlight2\par
+\cf5\highlight0 Red Text\cf0 : These values seem fixed on every reply. They might\par
+          encode firmware version, etc. I thought they also\par
+          represented lighting accessory types and fan types,\par
+          but when I disconnect the HUE 2 LED Strip, these values\par
+          still do not change.\par
+\highlight2\par
+Gray\highlight0    = Reply type (0x02 is first of 2)\par
+\par
+\highlight3 Yellow\highlight0  = XX XX YY YY ZZ ZZ  \par
+         where XX XX is RPM of Fan 1 in reverse byte order (0x8F, 0x03)\par
+               YY YY is RPM of Fan 2 in reverse byte order\par
+               ZZ ZZ is RPM of Fan 3 in reverse byte order\par
+\par
+\highlight6 Green\highlight0   = Duty Cycle in %\par
+         XX YY ZZ where XX = Duty of Fan 1, (0x5A)\par
+                        YY = Duty Fan 2, (0x28)\par
+                        ZZ = Duty, Fan 3 (0x4B)\par
+         This is repeated twice\par
+\par
+\highlight4 Cyan\highlight0    = Ambient noise level in dB\par
+         XX (0x40)\par
+\par
+\par
+\b STATUS Reply 2 of 2\b0\par
+\par
+000267: Bulk or Interrupt Transfer (UP), 2019-10-02 01:39:18.6996493 +0.0009750. (1. Device: NZXT USB Device) Status: 0x00000000\par
+Pipe Handle: 0x3f75a70 (Endpoint Address: 0x81)\par
+Get 0x40 bytes from the device\par
+\cf1  67 \highlight2 04\highlight0  \cf5 28 00 2E 00 16 57 41 47 35 31 33 20 03 00\cf0    g.(....WAG513 ..\par
+ \cf5 00 02\cf0  00 00 00 00 00 00 \highlight3 F8\highlight0  2F \highlight3 C0\highlight0  2F \highlight3 F5\highlight0  2F 00 00   ........\'f8/\'c0/\'f5/..\par
+ 00 00 00 00 00 00 00 00 01 00 17 00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+\par
+\highlight2 Gray\highlight0    = Reply type (0x04 is 2nd of 2)\par
+\par
+\highlight3 Yellow\highlight0  = XX 2F YY 2F ZZ 2F\par
+         Not sure what these values represent, but they fluctuate\par
+         somewhat regularly. They may represent fan voltage/current?\par
+\par
+\par
+\b\par
+\par
+DEVICE QUERY\par
+\par
+\b0 60 02 01 E8 03 01 E8 03 00 00 00 00 00 00 00 00    `..\'e8..\'e8.........\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+\b\par
+(21 03) DEVICE QUERY REPLY\b0\par
+\par
+ \cf5 21 03 2A 00 39 00 0D 57 41 47 35 32 36 20 02 \cf0\highlight7 04\highlight0    !.*.9..WAG526 ..\par
+\highlight7  00 00 00 00 00\highlight0  \highlight5 0C 0C 00 00 00 00\highlight0  00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................\par
+\par
+\highlight7 Pink\highlight0\tab\lang1033 = Device identifier for LED device on channel 1\par
+\par
+\highlight5 Red\highlight0\tab = Device identifier for LED device on channel 2\par
+\par
+04 00 00 00 00 00 is Strip V2\par
+0C 0C 00 00 00 00 is AER 2 Fan x2\lang9\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+}
+ 
