@@ -1,4 +1,4 @@
-# NzxtRgb
+# NzxtRGB
 You can install the library via [NuGet](https://www.nuget.org/packages/NzxtRGB/).
 
 ### Supported devices
