@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>A .NET Core library for controlling RGB lighting from NZXT products</Description>
+    <Copyright>Nicolás de Ory</Copyright>
+    <PackageProjectUrl>https://github.com/nicolasdeory/NzxtRgb</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/nicolasdeory/NzxtRgb</RepositoryUrl>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <PackageTags>nzxt, rgb, led, hid</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
