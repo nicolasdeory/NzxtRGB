@@ -47,6 +47,8 @@ namespace NzxtRGB
         private static void RestartNZXT()
         {
             Process[] processes = Process.GetProcessesByName("NZXT CAM");
+            if (processes.Length == 0)
+                return;
             Process nzxtCam = processes[0];
             string path = nzxtCam.MainModule.FileName;
             nzxtCam.Kill();
