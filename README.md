@@ -37,10 +37,7 @@ There are two options available:
 
 If you're running NZXT Cam, the device will be in shared mode, and NZXT Cam will send updates periodically. So if you want to keep the custom color, you'll need to send updates periodically (every 500ms is fine).
 
-Make sure not to send updates too fast (stick to 30fps). We're not responsible for any damage done to hardware.
+Make sure not to send updates too fast (stick to 30fps). Disclaimer: We're not responsible for any damage done to hardware.
 
 ### Contributing
 Contributions are welcome. Feel free to test this with your own setup and add your own devices. You can also add an issue with HID packets with a program such as Free USB Analyzer so support for that device can be added.
-
-### Disclaimer
-All the library does is use the same HID protocol NZXT CAM uses to communicate with their devices. However, I am not responsible for any hardware damage.
