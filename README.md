@@ -41,3 +41,6 @@ Make sure not to send updates too fast (stick to 30fps). We're not responsible f
 
 ### Contributing
 Contributions are welcome. Feel free to test this with your own setup and add your own devices. You can also add an issue with HID packets with a program such as Free USB Analyzer so support for that device can be added.
+
+### Disclaimer
+All the library does is use the same HID protocol NZXT CAM uses to communicate with their devices. However, I am not responsible for any hardware damage.
